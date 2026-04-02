@@ -1,3 +1,13 @@
 # Naive Bayes Classification for Spam Email Detection
 
 The purpose of this study is to gain an understanding of a Big Data method not covered in CHEMENG 4H03 scope, which was chosen to be the Naive Bayes Classification method. The pipeline flow is based on the article: 10.1109/ICCONS.2018.866295.
+
+### Initial Approach - Toy Example
+The “toy example” dataset of 10 spam and 10 non-spam emails were split to 12 training points – 6 spam and 6 non-spam – and 8 testing points – 4 spam and 4 non-spam – to prevent biased results. The final precision was 100%, indicating that false negative value was 0, thus, all emails identified as spam were spam emails. The recall, however, were 33.3%, which means that some spam emails were identified as non-spam. This was expected because the training data only contains 6 short emails, not sufficient no cover all spam vocabularies to provide an accurate prediction. Regardless, the precision showed that the program was functioning correctly, and increasing the data size would allow for higher recall rate. Thus, this implementation was then used on the Ling spam dataset.
+
+### Full Dataset Approach - Ling Spam Dataset
+Overall, there was no significant modification in the pipeline compared to what was used for the smaller data set. Because data were manually extracted to get even number of spam and non-spam emails, this was changed to match with the number of emails in the Ling Spam set – 1000 samples with 600 training data and 400 testing data. Another minor modification was that with larger dataset, some sections were really time consuming due to nested loops, which were then changed to improve runtime. 
+
+Besides the approach in the study, additional case studies were also carried out to understand the full behaviour of the classifier. The first one was the PSO, which followed the integrated approach in the study. The others involved uneven data extraction, extra preprocessing, and the use of external packages in Python. These two did not include the PSO algorithm, as the main goal of this study is to investigate the NB classification method. 
+
+
