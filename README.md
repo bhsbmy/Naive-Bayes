@@ -2,12 +2,6 @@
 
 The purpose of this study is to gain an understanding of a Big Data method not covered in CHEMENG 4H03 scope, which was chosen to be the Naive Bayes Classification method. The pipeline flow is based on the article: 10.1109/ICCONS.2018.866295.
 
-## Problem Formulation
-### Prolem Setup
-The spam detection problem consists of a binary class label, Y = {y_1,y_2}, for spam and non-spam, which in the study is presented as 0 for non-spam and 1 for spam, and a list of emails with n number of features/vocabularies, x={x_1,x_2,…,x_n}. The Naïve Bayes classifier uses the Bayes theorem to assign a class, represented by equation (1).
-
-P(y│x)=  (P(x│y)P(y))/(P(x))	(1)
-
 ## Method
 
 ### Overview
