@@ -20,6 +20,6 @@ From the results after implementation, the precision was 100%, indicating that a
 ### Full Dataset Approach - Ling Spam Dataset
 Overall, there was no significant modification in the pipeline compared to what was used for the smaller data set. Because data were manually extracted to get an even number of spam and non-spam emails, this was changed to match the number of emails in the Ling Spam set – 1000 samples with 600 training data and 400 testing data. Another minor modification was that with a larger dataset, some sections were really time-consuming due to nested loops, which were then changed to improve runtime. 
 
-Besides this approach, additional case studies will also be carried out to understand the full behaviour of the classifier. The first one will be the PSO, following the integrated approach in the study. The others involved uneven data extraction, extra preprocessing steps, and the use of external packages in Python. These will not include the PSO algorithm, as the main goal of this study is to investigate the NB classification method. 
+Besides this approach, additional case studies were also carried out to understand the full behaviour of the classifier. The first one was the PSO, following the integrated approach in the study. The others involved uneven data extraction, extra preprocessing steps, and the use of external packages in Python. These did not include the PSO algorithm, as the main goal of this study is to investigate the NB classification method. 
 
 
