@@ -1,6 +1,6 @@
 # Naive Bayes Classification for Spam Email Detection
 
-The purpose of this study is to gain an understanding of a Big Data method not covered in CHEMENG 4H03 scope, which was chosen to be the Naive Bayes Classification method. The pipeline flow is based on the article: 10.1109/ICCONS.2018.866295.
+The purpose of this study is to gain an understanding of a Big Data method not covered in the course scope, which was chosen to be the Naive Bayes Classification method. The pipeline flow is based on the article: 10.1109/ICCONS.2018.866295.
 
 ## Method
 
@@ -10,7 +10,7 @@ Based on the flow from the article, the implementation will first be carried out
 Compared to the study, this implementation, however, will not include the correlation-based feature selection (CFS). All vocabulary obtained from the dataset will be used for the studies with the aim of reducing computational complexity.
 
 ### Proposed Implementation
-<img width="7145" height="982" alt="Drawing 1 (1)" src="https://github.com/user-attachments/assets/4fceb24a-a6f2-476d-8c98-c68da4b7c4eb" />
+<img width="6042" height="984" alt="Drawing 1 (2)" src="https://github.com/user-attachments/assets/bc9bf139-42f6-4752-ac27-5370f75fdd44" />
 
 ### Initial Approach - Toy Example
 The “toy example” dataset of 10 spam and 10 non-spam emails was split into 12 training points – 6 spam and 6 non-spam – and 8 testing points – 4 spam and 4 non-spam – to prevent biased results. The performance of the model was assessed based on the precision and recall rate. It was expected that the overall recall rate would be low. This is because the training data only contains 6 short emails, not sufficient to cover all spam vocabularies to provide an accurate prediction. 
@@ -20,6 +20,6 @@ From the results after implementation, the precision was 100%, indicating that a
 ### Full Dataset Approach - Ling Spam Dataset
 Overall, there was no significant modification in the pipeline compared to what was used for the smaller data set. Because data were manually extracted to get an even number of spam and non-spam emails, this was changed to match the number of emails in the Ling Spam set – 1000 samples with 600 training data and 400 testing data. Another minor modification was that with a larger dataset, some sections were really time-consuming due to nested loops, which were then changed to improve runtime. 
 
-Besides the approach in the study, additional case studies were also carried out to understand the full behaviour of the classifier. The first one was the PSO, which followed the integrated approach in the study. The others involved uneven data extraction, extra preprocessing, and the use of external packages in Python. These two did not include the PSO algorithm, as the main goal of this study is to investigate the NB classification method. 
+Besides this approach, additional case studies will also be carried out to understand the full behaviour of the classifier. The first one will be the PSO, following the integrated approach in the study. The others involved uneven data extraction, extra preprocessing steps, and the use of external packages in Python. These will not include the PSO algorithm, as the main goal of this study is to investigate the NB classification method. 
 
 
